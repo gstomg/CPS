@@ -1,3 +1,36 @@
-h1{
-color: pink;
+/*Подключение шрифтов 'TT Lakes' , 'TT Lakes Bold', 'TT Lakes DemiBold' */
+@font-face {
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    font-style: normal;
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TT Lakes Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TT Lakes DemiBold';
+    font-weight: 600;
+    font-style: normal;
+    src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'),
+        url('../fonts/TTLakes-DemiBold.woff') format('woff'),
+        url('../fonts/TTLakes-DemiBold.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'TT Lakes', normal;
+    color:green;
+}
+@media (max-width:320px){
+    body{
+    background-color: rgb(232, 232, 232);
+    }
 }
