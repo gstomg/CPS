@@ -1,29 +1,3 @@
-/*Подключение шрифтов 'TT Lakes' , 'TT Lakes Bold', 'TT Lakes DemiBold' */
-@font-face {
-    font-family: 'TT Lakes';
-    font-weight: normal;
-    font-style: normal;
-    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-        url('../fonts/TTLakes-Regular.woff') format('woff'),
-        url('../fonts/TTLakes-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'TT Lakes';
-    font-weight: bold;
-    font-style: normal;
-    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('../fonts/TTLakes-Bold.woff') format('woff'),
-        url('../fonts/TTLakes-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    font-weight: 500;
-    font-style: normal;
-    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-        url('TTLakes-Medium.woff') format('woff'),
-        url('TTLakes-Medium.ttf') format('truetype');
-}
 @media (max-width:768px){
     .header__button.header__button--hidden, .service__action, .header_divider-hiddenmobile,.about__paragraph.about__paragraph_type_second{
         display: none;
@@ -114,6 +88,11 @@ body{
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+
+.about__read-more p{
+    font-family: 'TT Lakes';
+    font-weight: 500;
 }
 .about__content{
     display: flex;
