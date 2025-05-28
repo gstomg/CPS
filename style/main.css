@@ -1,4 +1,4 @@
-@media (max-width:767px){
+@media (max-width:768px){
     .header__button.header__button--hidden, .service__action, .header_divider-hiddenmobile,.about__paragraph.about__paragraph_type_second{
         display: none;
     }
@@ -23,42 +23,24 @@
         gap: 16px;
     }
     body{
-        gap: 24px;
-    }
-    .about-image__office{
-    width: 100%;
-    display: flex;
-    }
-    .header__nav{
-    padding: 0 16px;
-    }
-    .about__content{
-    padding: 0 16px;
-    }
-    .header__right{
-    gap: 25px;
-    }
-    .header__left{
-    gap: 10px;
-    }
-}
-
-
-body{
         display: flex;
         flex-direction: column;
+        gap: 24px;
+    }
 }
+
 .header__nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 88px;
+    padding: 0 16px;
 }
 .header__left{
     width: 155px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 .header__right{
@@ -66,6 +48,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: end;
+    gap: 25px;
 }
 
 
@@ -80,7 +63,10 @@ body{
 }
 
 
-
+.about-image__office{
+    width: 100%;
+    display: flex;
+}
 .service__menu{
     overflow-x: auto;
     overflow-y: hidden;
@@ -112,6 +98,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 0 16px;
 }
 .service{
     display: flex;
@@ -155,56 +142,4 @@ h1{
 .service__header-text{
     width: 300px;
     padding-left: 12px;
-}
-
-
-
-
-
-@media (min-width:768px){
-    .about{
-        display: flex;
-        flex-direction: row;
-        gap:48px;
-        padding: 0 24px;
-    }
-    .service__action{
-        display: none;
-    }
-    .main{
-        gap:32px;/* в мобилку отдельно другое число закинуть выше*/
-    }
-    .service{
-        gap: 32px;/* в мобилку отдельно другое число закинуть выше*/
-    }
-    .service__menu{
-        padding-left: 24px;
-    }
-    .service__header-text{
-        padding-left: 20px;
-    }
-    body{
-        gap: 24px;
-    }
-    .header__nav{
-    padding: 0 24px;
-    }
-    .about__text{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    }
-    .about__paragraph.about__paragraph_type_second{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    max-height: calc(2em * 1.4);
-    line-height: 1.4;
-    }
-    .header__right{
-    gap: 16px;
-    }
-    .header__left{
-    gap: 20px;
-    }
 }
