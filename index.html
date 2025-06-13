@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги и сервисы</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="style/main.css" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/fonts.css">
@@ -97,6 +99,117 @@
                 <img src="img/picture-cps.jpg" alt="Фотография CPS" class="about-image__office">
             </div>
         </section>
+        <div class="brands-container">
+            <div class="brands-container__header">
+                    <h2 class="brands-container__title">Ремонты техники различных брендов</h2>
+            </div>
+            <div class="brands-container__slider swiper">
+                <div class="brands-container__wrapper swiper-wrapper">
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-lenovo.svg" alt="Lenovo">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Lenovo">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-samsung.svg" alt="Samsung">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Samsung">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-apple.svg" alt="Apple">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Apple">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-viewsonic.svg" alt="Viewsonic">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Viewsonic">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-bosch.svg" alt="Bosch">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Bosch">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-hp.svg" alt="HP">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к HP">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-acer.svg" alt="Acer">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Acer">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-sony.svg" alt="Sony">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Sony">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-lenovo.svg" alt="Lenovo">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Lenovo">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-samsung.svg" alt="Samsung">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Samsung">
+                                </button>
+                            </div>
+
+                            <div class="brands-container__slide swiper-slide">
+                                <img src="img/brand-apple.svg" alt="Apple">
+                                <button class="brands-container__action">
+                                    <img src="img/go.svg" alt="Перейти к Apple">
+                                </button>
+                            </div>
+                </div>
+                <div class="brands-container__pagination swiper-pagination"></div>  
+            </div> 
+            <div class="brands-container__show-all">
+                <img class="brands-container__show-all-icon" src="img/icon.svg" alt="">
+                <button type="button" class="brands-container__show-all-btn">
+                    Показать все</button>
+            </div>
+        </div>
     </main>
-</body>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- инициализация Swiper -->
+    <script>
+        var swiper = new Swiper(".brands-container__slider", {
+            slidesPerView: "auto",
+            a11y: { clicked: true },
+            spaceBetween: 14,
+            slidesOffsetBefore: 16,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                enabled: false
+                }
+            }
+        });
+    </script>
+    </body>
 </html>
